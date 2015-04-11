@@ -1,0 +1,26 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "medianocturne",
+    "longName": "Karate",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "fonts/Karate.ttf",
+                "name": "karate_48",
+                "type": "font"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "Karate",
+    "uuid": "64ec12eb-6144-4944-87f5-2a5967ea6be3",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
