@@ -2,6 +2,7 @@
 
 static Window *s_main_window;
 static TextLayer *s_time_layer;
+static BitmapLayer *s_bitmap_layer;
 static GFont s_time_font;
 static void update_time() {
   //Get a tm structure
@@ -28,9 +29,9 @@ static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
 
 
 static void main_window_load(Window *window){
+  window_set_background_color(window, GColorBlack);
 
   
-
   
   // Create time TextLayer
   s_time_layer = text_layer_create(GRect(0, 55, 144, 168));
@@ -44,16 +45,21 @@ static void main_window_load(Window *window){
   text_layer_set_font(s_time_layer, s_time_font);
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
-  //Add as child layer
   
+
+  
+  
+  //Add as child layer
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_time_layer));
+
+ 
 }
 
 
 static void main_window_unload(Window *window){
   text_layer_destroy(s_time_layer);
   fonts_unload_custom_font(s_time_font);
- 
+  bitmap_layer_destroy(s_bitmap_layer);
 
 }
 
