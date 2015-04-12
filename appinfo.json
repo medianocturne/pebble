@@ -9,6 +9,11 @@
     "resources": {
         "media": [
             {
+                "file": "fonts/Karate1.ttf",
+                "name": "karate_24",
+                "type": "font"
+            },
+            {
                 "file": "fonts/Karate.ttf",
                 "name": "karate_48",
                 "type": "font"
