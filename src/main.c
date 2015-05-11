@@ -1,5 +1,5 @@
 #include <pebble.h>
-
+//for git-it
 static Window *s_main_window;
 static TextLayer *s_time_layer;
 static TextLayer *s_date_layer;
